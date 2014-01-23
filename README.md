@@ -1,7 +1,7 @@
 Spree Ember Example
 ===================
 
-Spree Ember Example is an example on how to integrate [Spree](http://spreecommerce.com) with [Ember](http://emberjs.com).
+Spree Ember Example is an example on how to integrate [Spree](http://spreecommerce.com) with [Ember](http://emberjs.com). It's a demo application made for the [Using Ember.js with Spree](http://nebulab.it/blog/using-ember-js-with-spree/) blogpost.
 
 Setup
 -----
