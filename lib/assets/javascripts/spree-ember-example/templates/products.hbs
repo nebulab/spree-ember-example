@@ -1,0 +1,20 @@
+<aside id="sidebar" class="columns five">
+  <div id="products">
+    <h2>Products</h2>
+
+    <ul>
+      {{#each product in controller}}
+        <li class="clearfix">
+          {{#link-to "product" product classNames="button columns five"}}
+            <img {{bind-attr src="product.mainImage.productUrl" alt="product.mainImage.alt" class=":one :column :alpha"}}>
+            {{ product.name }}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</aside>
+
+<div id="content" class="columns eleven">
+  {{ outlet }}
+</div>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SpreeEmberExample</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "spree-ember-example/application" %>
+  <%= csrf_meta_tags %>
+
+  <meta name="api-key" content="<%= spree_current_user.spree_api_key %>" />
+</head>
+<body>
+  <script type="text/x-handlebars" data-template-name="application">
+    <div class="container">
+      <h1>My Little Ember Shop</h1>
+
+      {{ outlet }}
+    </div>
+  </script>
+</body>
+</html>

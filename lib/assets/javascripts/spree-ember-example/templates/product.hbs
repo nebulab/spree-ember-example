@@ -1,0 +1,12 @@
+<div class="product">
+  <h3>{{name}} ${{price}}</h3>
+
+  <p>
+    {{description}}<br/>
+
+    <p>
+    {{#each image in this.images}}
+      <img {{bind-attr src="image.productUrl" alt="image.alt"}}>
+    {{/each}}
+  </p>
+</div>
